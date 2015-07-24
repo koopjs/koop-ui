@@ -1,16 +1,31 @@
 {
   "name": "koop-ui",
+  "description": "An experimental user interface for Koop",
   "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron .",
-    "sass": "node-sass styles/main.scss -o ./styles/css --output-style=compressed"
-  },
   "author": "Chris Helm",
-  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/koopjs/koop-ui/issues"
+  },
   "devDependencies": {
     "electron-prebuilt": "^0.30.0",
     "node-sass": "^3.2.0"
+  },
+  "homepage": "https://github.com/koopjs/koop-ui#readme",
+  "keywords": [
+    "admin",
+    "etl",
+    "feature service",
+    "geojson",
+    "koop"
+  ],
+  "license": "ISC",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:koopjs/koop-ui.git"
+  },
+  "scripts": {
+    "sass": "node-sass styles/main.scss -o ./styles/css --output-style=compressed",
+    "start": "electron ."
   }
 }
