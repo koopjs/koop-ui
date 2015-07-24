@@ -2,6 +2,8 @@
 
 > An experimental user interface for Koop
 
+<img width="1198" alt="koop-ui" src="https://cloud.githubusercontent.com/assets/351164/8867084/361ed8d8-3182-11e5-9d71-a8416deb0f1b.png">
+
 The goal of this work is to explore some ideas around building a useful tool for inspecting various koop instances from a distance. This app can tell you: 
 
 * what providers are installed
