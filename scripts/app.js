@@ -1,7 +1,8 @@
 'use strict';
 
 // the koop instance to use (need a way to dynamically set this)
-var host = 'http://localhost:1337';
+//var host = 'http://localhost:1337';
+var host = 'http://koop.dc.esri.com';
 
 /**
  * @ngdoc overview
