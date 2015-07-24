@@ -1,0 +1,62 @@
+<h1 class="page-header">{{name}} Provider</h1>
+
+<div role="tabpanel">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li id="datasetsTab" ng-click="selectTab('datasets')" role="presentation" class="tab active"><a>Datasets</a></li>
+    <li id="routesTab" ng-click="selectTab('routes')" role="presentation" class="tab"><a>Routes</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="datasets">
+      <div class="panel panel-default" style="margin-top:10px">
+        <div class="panel-body">
+          <div class="input-group">
+            <input type="text" style="margin-right:10px;width:400px" class="form-control" id="{{name}}-new" placeholder="a {{name}} route">
+            <span class="btn btn-primary" ng-click="add()" id="{{name}}-add" data-loading-text="Adding...">Add Data</span>
+          </div>
+        </div>
+      </div>
+      <table class="table table-striped table-hover">
+        <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Key</th>
+          <th>Timestamp</th>
+          <th>Status</th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr ng-click="selectRow($index)" ng-repeat="dataset in datasets">
+            <td>{{$index + 1}}</a></td>
+            <td>{{dataset.info.name}}</td>
+            <td>{{dataset.id.replace(name+':','').replace(':info','')}}</td>
+            <td>{{dataset.info.updated_at}}</td>
+            <td><i class="fa fa-check"></i></td>
+          </tr>
+        </tbody>
+      </table>
+    </div> 
+    <div role="tabpanel" class="tab-pane" id="routes">
+        <p class="well" style="margin-top: 10px;">Routes are patterns that describe out to access prodiver data in different ways.</p>
+        <table class="table table-striped">
+          <thead>
+          <tr>
+            <th>Method</th>
+            <th>Pattern</th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="route in routes">
+              <td>{{route.split(" ")[0]}}</a></td>
+              <td>{{route.split(" ")[1]}}</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+</div>
+

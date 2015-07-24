@@ -1,0 +1,16 @@
+{
+  "name": "koop-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "sass": "node-sass styles/main.scss -o ./styles/css --output-style=compressed"
+  },
+  "author": "Chris Helm",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-prebuilt": "^0.30.0",
+    "node-sass": "^3.2.0"
+  }
+}

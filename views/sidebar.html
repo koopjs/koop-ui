@@ -1,0 +1,4 @@
+<ul class="nav nav-sidebar">
+  <li class="active"><a href="#/">Overview <span class="sr-only">(current)</span></a></li>
+  <li ng-click="select($index)" ng-repeat="provider in providers" ng-init="select(0)"><a href="#/providers/{{provider.      name}}">{{provider.name}}</a></li>
+</ul>
