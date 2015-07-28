@@ -18,7 +18,7 @@
     "geojson",
     "koop"
   ],
-  "license": "ISC",
+  "license": "Apache-2.0",
   "main": "main.js",
   "repository": {
     "type": "git",
