@@ -7,6 +7,7 @@
     "url": "https://github.com/koopjs/koop-ui/issues"
   },
   "devDependencies": {
+    "bower": "^1.5.2",
     "electron-prebuilt": "^0.30.0",
     "node-sass": "^3.2.0"
   },
@@ -25,6 +26,7 @@
     "url": "git@github.com:koopjs/koop-ui.git"
   },
   "scripts": {
+    "postinstall": "bower install",
     "sass": "node-sass styles/main.scss -o ./styles/css --output-style=compressed",
     "start": "electron ."
   }
