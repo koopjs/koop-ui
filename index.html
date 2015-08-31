@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.css">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body ng-app="koopApp">
 
@@ -24,12 +24,11 @@
             <li ng-click="select(provider.name)" ng-class="{active: isActive(provider.name)}" ng-repeat="provider in providers"><a href="#/providers/{{provider.name}}">{{provider.name}}</a></li>
           </ul>
         </div>
-        
+
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" ng-view="main">
         </div>
       </div>
     </div>
-
 
     <!-- build:js(.) scripts/oldieshim.js -->
     <!--[if lt IE 9]>
@@ -40,7 +39,9 @@
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script>
+        window.$ = window.jQuery = require('./bower_components/jquery/dist/jquery.js')
+    </script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
@@ -63,12 +64,12 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <script src="scripts/controllers/providers.js"></script>
-        <script src="scripts/controllers/datasets.js"></script>
-        <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/providers.js"></script>
+    <script src="scripts/controllers/datasets.js"></script>
+    <!-- endbuild -->
 </body>
 </html>
