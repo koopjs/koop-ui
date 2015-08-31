@@ -13,15 +13,15 @@ The goal of this work is to explore some ideas around building a useful tool for
 ## Installation
 
 ```
-  git clone
-  npm install
-  bower install
-  npm run start
+git clone git@github.com:koopjs/koop-ui.git
+cd koop-ui
+npm install
+npm start
 ```
 
 ## Configuring
 
-The app is configured by default to point at a localhost instance of koop, but can be changed by modifying the `host` property in `scripts/app.js`.
+The app is configured by default to point `http://koop.dc.esri.com`, but can be changed by modifying the `host` variable in `scripts/app.js`.
 
 ## License
 
