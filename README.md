@@ -1,5 +1,7 @@
 # Koop UI
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/koopjs/koop-ui.svg)](https://greenkeeper.io/)
+
 > An experimental user interface for Koop
 
 <img width="1198" alt="koop-ui" src="https://cloud.githubusercontent.com/assets/351164/8867084/361ed8d8-3182-11e5-9d71-a8416deb0f1b.png">
