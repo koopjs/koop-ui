@@ -8,8 +8,8 @@
   },
   "devDependencies": {
     "bower": "^1.5.2",
-    "electron-prebuilt": "^0.30.0",
-    "node-sass": "^3.2.0"
+    "electron-prebuilt": "^1.4.13",
+    "node-sass": "^4.5.3"
   },
   "homepage": "https://github.com/koopjs/koop-ui#readme",
   "keywords": [
